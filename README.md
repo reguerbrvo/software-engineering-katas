@@ -34,6 +34,18 @@ Develop a program that loads at least one dataset into memory, representing each
 
 ---
 
+### 🥋 Kata 3 — In-Memory Histogram with Dependency Injection
+**Goal:**  
+Generate a histogram in memory over a selected attribute of the loaded objects using **dependency injection** (lambda or method reference) and a simple **Histogram** view model.
+
+**Main tasks:**
+- Use a function to convert each record into a **bin** (e.g., decade computed from `year`).  
+- Implement a lightweight `Histogram` view model that stores frequencies in a `Map` and allows increment (`put`) and querying (`count`).  
+- Build the histogram from the loaded collection using a `HistogramBuilder` that applies the injected function to each object.  
+- Print the results by iterating over the bins and showing `bin: frequency`.
+
+---
+
 ## 🛠️ Technologies Used
 - **Language:** Java  
 - **IDE:** IntelliJ IDEA  
@@ -44,4 +56,3 @@ Develop a program that loads at least one dataset into memory, representing each
 ## 👨‍💻 Author
 **Raul Reguera Bravo**  
 Computer Science Student — USAL / ULPGC 
-
